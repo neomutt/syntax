@@ -1,5 +1,41 @@
-
 syn keyword muttrcVarBool	skipwhite contained
+			\ allow_8bit allow_ansi arrow_cursor ascii_chars askbcc askcc attach_split
+			\ auto_tag autoedit beep beep_new bounce_delivered braille_friendly
+			\ check_mbox_size check_new collapse_unread confirmappend confirmcreate
+			\ crypt_autoencrypt crypt_autopgp crypt_autosign crypt_autosmime
+			\ crypt_confirmhook crypt_opportunistic_encrypt crypt_replyencrypt
+			\ crypt_replysign crypt_replysignencrypted crypt_timestamp crypt_use_gpgme
+			\ crypt_use_pka delete_untag digest_collapse duplicate_threads edit_hdrs
+			\ edit_headers encode_from envelope_from fast_reply fcc_clear followup_to
+			\ force_name forw_decode forw_decrypt forw_quote forward_decode forward_decrypt
+			\ forward_quote hdrs header help hidden_host hide_limited hide_missing
+			\ hide_thread_subject hide_top_limited hide_top_missing honor_disposition
+			\ idn_decode idn_encode ignore_linear_white_space ignore_list_reply_to
+			\ imap_check_subscribed imap_list_subscribed imap_passive imap_peek
+			\ imap_servernoise implicit_autoview include_onlyfirst keep_flagged
+			\ mail_check_recent mail_check_stats mailcap_sanitize maildir_check_cur
+			\ maildir_header_cache_verify maildir_trash mark_old markers menu_move_off
+			\ menu_scroll message_cache_clean meta_key metoo mh_purge mime_forward_decode
+			\ narrow_tree pager_stop pgp_auto_decode pgp_auto_traditional pgp_autoencrypt
+			\ pgp_autoinline pgp_autosign pgp_check_exit pgp_create_traditional
+			\ pgp_ignore_subkeys pgp_long_ids pgp_replyencrypt pgp_replyinline pgp_replysign
+			\ pgp_replysignencrypted pgp_retainable_sigs pgp_show_unusable pgp_strict_enc
+			\ pgp_use_gpg_agent pipe_decode pipe_split pop_auth_try_all pop_last
+			\ postpone_encrypt postpone_encrypt_as print_decode print_split prompt_after
+			\ read_only reflow_space_quotes reflow_text reflow_wrap reply_self resolve
+			\ resume_draft_files resume_edited_draft_files reverse_alias reverse_name
+			\ reverse_realname rfc2047_parameters save_address save_empty save_name score
+			\ sidebar_folder_indent sidebar_new_mail_only sidebar_next_new_wrap
+			\ sidebar_short_path sidebar_sort sidebar_visible sig_dashes sig_on_top
+			\ smart_wrap smime_ask_cert_label smime_decrypt_use_default_key smime_is_default
+			\ sort_re ssl_force_tls ssl_use_sslv2 ssl_use_sslv3 ssl_use_tlsv1
+			\ ssl_usesystemcerts ssl_verify_dates ssl_verify_host status_on_top strict_mime
+			\ strict_threads suspend text_flowed thorough_search thread_received tilde
+			\ ts_enabled uncollapse_jump use_8bitmime use_domain use_envelope_from use_from
+			\ use_idn use_ipv6 user_agent wait_key weed wrap_search write_bcc
+			\ nextgroup=muttrcSetBoolAssignment,muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
+
+syntax keyword muttrcVarBool	skipwhite contained
 			\ noallow_8bit noallow_ansi noarrow_cursor noascii_chars noaskbcc noaskcc noattach_split
 			\ noauto_tag noautoedit nobeep nobeep_new nobounce_delivered nobraille_friendly
 			\ nocheck_mbox_size nocheck_new nocollapse_unread noconfirmappend noconfirmcreate
@@ -73,47 +109,28 @@ syn keyword muttrcVarBool	skipwhite contained
 			\ invuse_idn invuse_ipv6 invuser_agent invwait_key invweed invwrap_search invwrite_bcc
 			\ nextgroup=muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
 
-" Vim syntax file for the NeoMutt forgotten-attachment feature.
+syntax keyword muttrcVarBool    contained skipwhite abort_noattach                                    nextgroup=muttrcSetBoolAssignment,muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
+syntax keyword muttrcVarBool    contained skipwhite keywords_legacy                                   nextgroup=muttrcSetBoolAssignment,muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
+syntax keyword muttrcVarBool    contained skipwhite keywords_standard                                 nextgroup=muttrcSetBoolAssignment,muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
+syntax keyword muttrcVarBool    contained skipwhite ask_follow_up                                     nextgroup=muttrcSetBoolAssignment,muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
+syntax keyword muttrcVarBool    contained skipwhite ask_x_comment_to                                  nextgroup=muttrcSetBoolAssignment,muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
+syntax keyword muttrcVarBool    contained skipwhite mime_subject                                      nextgroup=muttrcSetBoolAssignment,muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
+syntax keyword muttrcVarBool    contained skipwhite nntp_listgroup                                    nextgroup=muttrcSetBoolAssignment,muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
+syntax keyword muttrcVarBool    contained skipwhite nntp_load_description                             nextgroup=muttrcSetBoolAssignment,muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
+syntax keyword muttrcVarBool    contained skipwhite save_unsubscribed                                 nextgroup=muttrcSetBoolAssignment,muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
+syntax keyword muttrcVarBool    contained skipwhite show_new_news                                     nextgroup=muttrcSetBoolAssignment,muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
+syntax keyword muttrcVarBool    contained skipwhite show_only_unread                                  nextgroup=muttrcSetBoolAssignment,muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
+syntax keyword muttrcVarBool    contained skipwhite x_comment_to                                      nextgroup=muttrcSetBoolAssignment,muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
+syntax keyword muttrcVarBool    contained skipwhite nm_record                                         nextgroup=muttrcSetBoolAssignment,muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
+syntax keyword muttrcVarBool    contained skipwhite virtual_spoolfile                                 nextgroup=muttrcSetBoolAssignment,muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
+syntax keyword muttrcVarBool    contained skipwhite reply_with_xorig                                  nextgroup=muttrcSetBoolAssignment,muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
+syntax keyword muttrcVarBool    contained skipwhite sidebar_folder_indent                             nextgroup=muttrcSetBoolAssignment,muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
+syntax keyword muttrcVarBool    contained skipwhite sidebar_new_mail_only                             nextgroup=muttrcSetBoolAssignment,muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
+syntax keyword muttrcVarBool    contained skipwhite sidebar_next_new_wrap                             nextgroup=muttrcSetBoolAssignment,muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
+syntax keyword muttrcVarBool    contained skipwhite sidebar_short_path                                nextgroup=muttrcSetBoolAssignment,muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
+syntax keyword muttrcVarBool    contained skipwhite sidebar_visible                                   nextgroup=muttrcSetBoolAssignment,muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
+syntax keyword muttrcVarBool    contained skipwhite collapse_all                                      nextgroup=muttrcSetBoolAssignment,muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
+syntax keyword muttrcVarBool    contained skipwhite imap_force_ssl noimap_force_ssl invimap_force_ssl nextgroup=muttrcSetBoolAssignment,muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
 
-syntax keyword muttrcVarBool    skipwhite contained abort_noattach         nextgroup=muttrcSetBoolAssignment,muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
-
-" Vim syntax file for the NeoMutt keywords feature.
-
-syntax keyword muttrcVarBool    contained skipwhite keywords_legacy       nextgroup=muttrcSetBoolAssignment,muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
-syntax keyword muttrcVarBool    contained skipwhite keywords_standard     nextgroup=muttrcSetBoolAssignment,muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
-
-" Vim syntax file for the NeoMutt nntp feature.
-
-syntax keyword muttrcVarBool    contained skipwhite ask_follow_up         nextgroup=muttrcSetBoolAssignment,muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
-syntax keyword muttrcVarBool    contained skipwhite ask_x_comment_to      nextgroup=muttrcSetBoolAssignment,muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
-syntax keyword muttrcVarBool    contained skipwhite mime_subject          nextgroup=muttrcSetBoolAssignment,muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
-syntax keyword muttrcVarBool    contained skipwhite nntp_listgroup        nextgroup=muttrcSetBoolAssignment,muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
-syntax keyword muttrcVarBool    contained skipwhite nntp_load_description nextgroup=muttrcSetBoolAssignment,muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
-syntax keyword muttrcVarBool    contained skipwhite save_unsubscribed     nextgroup=muttrcSetBoolAssignment,muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
-syntax keyword muttrcVarBool    contained skipwhite show_new_news         nextgroup=muttrcSetBoolAssignment,muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
-syntax keyword muttrcVarBool    contained skipwhite show_only_unread      nextgroup=muttrcSetBoolAssignment,muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
-syntax keyword muttrcVarBool    contained skipwhite x_comment_to          nextgroup=muttrcSetBoolAssignment,muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
-
-" Vim syntax file for the NeoMutt notmuch feature.
-
-syntax keyword muttrcVarBool    contained skipwhite nm_record             nextgroup=muttrcSetBoolAssignment,muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
-syntax keyword muttrcVarBool    contained skipwhite virtual_spoolfile     nextgroup=muttrcSetBoolAssignment,muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
-
-" Vim syntax file for the NeoMutt reply-with-xorig feature.
-
-syntax keyword muttrcVarBool    skipwhite contained reply_with_xorig         nextgroup=muttrcSetBoolAssignment,muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
-
-" Vim syntax file for the NeoMutt sidebar feature.
-
-syntax keyword muttrcVarBool    contained skipwhite sidebar_folder_indent nextgroup=muttrcSetBoolAssignment,muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
-syntax keyword muttrcVarBool    contained skipwhite sidebar_new_mail_only nextgroup=muttrcSetBoolAssignment,muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
-syntax keyword muttrcVarBool    contained skipwhite sidebar_next_new_wrap nextgroup=muttrcSetBoolAssignment,muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
-syntax keyword muttrcVarBool    contained skipwhite sidebar_short_path    nextgroup=muttrcSetBoolAssignment,muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
-syntax keyword muttrcVarBool    contained skipwhite sidebar_visible       nextgroup=muttrcSetBoolAssignment,muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
-
-" Vim syntax file for the NeoMutt miscellany (options without features).
-
-syntax keyword muttrcVarBool    contained skipwhite collapse_all nextgroup=muttrcSetBoolAssignment,muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
-
-" Present in 1.4.2.1 (pgp_create_traditional was a bool then)
-syn keyword muttrcVarBool	contained skipwhite imap_force_ssl noimap_force_ssl invimap_force_ssl nextgroup=muttrcSetBoolAssignment,muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
+nextgroup=muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
+nextgroup=muttrcSetBoolAssignment,muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
