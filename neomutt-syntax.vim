@@ -310,6 +310,13 @@ syn keyword muttrcMonoAttrib	contained bold none normal reverse standout underli
 syn keyword muttrcMono		contained mono		skipwhite nextgroup=muttrcColorField
 syn match   muttrcMonoLine	"^\s*mono\s\+\S\+"	skipwhite nextgroup=muttrcMonoAttrib contains=muttrcMono
 
+syntax keyword muttrcCommand skipwhite charset-hook nextgroup=muttrcRXString
+syntax keyword muttrcCommand skipwhite unhook nextgroup=muttrcHooks
+
+syntax keyword muttrcCommand skipwhite spam nextgroup=muttrcSpamPattern
+syntax region muttrcSpamPattern contained skipwhite keepend start=+'+ skip=+'+ end=+'+ contains=muttrcPattern nextgroup=muttrcString,muttrcStringNL
+syntax region muttrcSpamPattern contained skipwhite keepend start=+"+ skip=+"+ end=+"+ contains=muttrcPattern nextgroup=muttrcString,muttrcStringNL
+
 let b:current_syntax = "muttrc"
 
 let &cpo = s:cpo_save
