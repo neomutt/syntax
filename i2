@@ -298,9 +298,9 @@ quote_regexp                     DT_RX
 reply_regexp                     DT_RX
 smileys                          DT_RX
 
+sort                             DT_SORT
 pgp_sort_keys                    DT_SORT|DT_SORT_KEYS
 sidebar_sort_method              DT_SORT|DT_SORT_SIDEBAR
-sort                             DT_SORT
 sort_alias                       DT_SORT|DT_SORT_ALIAS
 sort_aux                         DT_SORT|DT_SORT_AUX
 sort_browser                     DT_SORT|DT_SORT_BROWSER
