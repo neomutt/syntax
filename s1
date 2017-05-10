@@ -1,0 +1,60 @@
+Sort 0x00 - Default
+	date
+	date-sent
+	date-received
+	mailbox-order
+	subject
+	from
+	size
+	threads
+	to
+	score
+	spam
+	label
+
+Sort 0x80 - Aux
+	date
+	date-sent
+	date-received
+	mailbox-order
+	subject
+	from
+	size
+	threads
+	to
+	score
+	spam
+	label
+
+Sort 0x20 - Browser
+	alpha
+	count
+	date
+	desc
+	new
+	size
+	unsorted
+
+Sort 0x10 - Alias
+	alias
+	address
+	unsorted
+
+Sort 0x40 - Keys
+	address
+	date
+	keyid
+	trust
+
+Sort 0x100 - Sidebar
+	alpha
+	count
+	desc
+	flagged
+	mailbox-order
+	name
+	new
+	path
+	unread
+	unsorted
+
