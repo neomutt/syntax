@@ -1,9 +1,0 @@
-/* External Query Menu */
-const struct binding_t OpQuery[] = { /* map: query */
-  { "create-alias",          OP_CREATE_ALIAS,                "a" },
-  { "mail",                  OP_MAIL,                        "m" },
-  { "query",                 OP_QUERY,                       "Q" },
-  { "query-append",          OP_QUERY_APPEND,                "A" },
-  { NULL,                    0,                              NULL },
-};
-

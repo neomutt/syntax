@@ -1,6 +1,0 @@
-const struct binding_t OpPgp[] = { /* map: pgp */
-  { "verify-key",            OP_VERIFY_KEY,                  "c" },
-  { "view-name",             OP_VIEW_ID,                     "%" },
-  { NULL,                    0,                              NULL },
-};
-

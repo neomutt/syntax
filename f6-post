@@ -1,6 +1,0 @@
-const struct binding_t OpPost[] = { /* map: postpone */
-  { "delete-entry",          OP_DELETE,                      "d" },
-  { "undelete-entry",        OP_UNDELETE,                    "u" },
-  { NULL,                    0,                              NULL },
-};
-
