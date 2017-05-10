@@ -109,6 +109,13 @@ syn match muttrcVarEqualsSmimeFmt contained skipwhite "=" nextgroup=muttrcSmimeF
 syn keyword muttrcVarStr	contained skipwhite date_format nextgroup=muttrcVarEqualsStrftimeFmt
 syn match muttrcVarEqualsStrftimeFmt contained skipwhite "=" nextgroup=muttrcStrftimeFormatStr
 
+" nntp
+syntax keyword muttrcVarStr contained skipwhite group_index_format    nextgroup=muttrcVarEqualsIdxFmt
+" notmuch
+syntax keyword muttrcVarStr contained skipwhite vfolder_format        nextgroup=muttrcVarEqualsIdxFmt
+" sidebar
+syntax keyword muttrcVarStr contained skipwhite sidebar_format        nextgroup=muttrcVarEqualsIdxFmt
+
 syn match muttrcVPrefix		contained /[?&]/ nextgroup=muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
 
 syn match muttrcVarStr		contained skipwhite 'my_[a-zA-Z0-9_]\+' nextgroup=muttrcSetStrAssignment,muttrcVPrefix,muttrcVarBool,muttrcVarQuad,muttrcVarNum,muttrcVarStr
