@@ -6,8 +6,9 @@ syntax keyword q_Command set skipwhite nextgroup=q_VarBool,q_SetBoolAssignment
 
 syntax keyword q_VarBool skipwhite contained allow_ansi arrow_cursor ascii_chars attach_split nextgroup=q_VarBool,q_Assignment
 
-syntax match q_Bad    contained skipwhite /[^"' ]\S\+[^"' ]/   containedin=q_String nextgroup=q_VarBool,q_SetBoolAssignment
-syntax match q_YesNo  contained skipwhite /\%(yes\|no\)/       containedin=q_String nextgroup=q_VarBool,q_SetBoolAssignment
+syntax match q_Bad       contained skipwhite /[^"' ]\S\+[^"' ]/        containedin=q_String nextgroup=q_VarBool,q_SetBoolAssignment
+syntax match q_YesNo     contained skipwhite /\%(yes\|no\)/            containedin=q_String nextgroup=q_VarBool,q_SetBoolAssignment
+" syntax match q_AskYesNo  contained skipwhite /\%(ask-\)\=\%(yes\|no\)/ containedin=q_String nextgroup=q_VarBool,q_SetBoolAssignment
 
 syntax match q_String contained skipwhite /'[^']\+'/          contains=q_Bad,q_YesNo nextgroup=q_VarBool,q_SetBoolAssignment
 

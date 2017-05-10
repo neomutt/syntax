@@ -5,7 +5,7 @@ set allow_ansi = 'no'
 set arrow_cursor = wibble    ascii_chars
 set arrow_cursor = 'wibble'  ascii_chars
 
-set arrow_cursor = yes    ascii_chars = no allow_ansi
+set arrow_cursor = yes    ascii_chars = ask-no allow_ansi
 set arrow_cursor = 'no'   ascii_chars
 
 set ascii_chars attach_split
