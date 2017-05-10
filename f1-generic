@@ -1,0 +1,46 @@
+// clang-format off
+const struct binding_t OpGeneric[] = { /* map: generic */
+  /*
+  ** <para>
+  ** The <emphasis>generic</emphasis> menu is not a real menu, but specifies common functions
+  ** (such as movement) available in all menus except for <emphasis>pager</emphasis> and
+  ** <emphasis>editor</emphasis>.  Changing settings for this menu will affect the default
+  ** bindings for all menus (except as noted).
+  ** </para>
+  */
+  { "top-page",        OP_TOP_PAGE,             "H" },
+  { "next-entry",      OP_NEXT_ENTRY,           "j" },
+  { "previous-entry",  OP_PREV_ENTRY,           "k" },
+  { "bottom-page",     OP_BOTTOM_PAGE,          "L" },
+  { "refresh",         OP_REDRAW,               "\014" },
+  { "middle-page",     OP_MIDDLE_PAGE,          "M" },
+  { "search-next",     OP_SEARCH_NEXT,          "n" },
+  { "exit",            OP_EXIT,                 "q" },
+  { "tag-entry",       OP_TAG,                  "t" },
+  { "next-page",       OP_NEXT_PAGE,            "z" },
+  { "previous-page",   OP_PREV_PAGE,            "Z" },
+  { "last-entry",      OP_LAST_ENTRY,           "*" },
+  { "first-entry",     OP_FIRST_ENTRY,          "=" },
+  { "enter-command",   OP_ENTER_COMMAND,        ":" },
+  { "next-line",       OP_NEXT_LINE,            ">" },
+  { "previous-line",   OP_PREV_LINE,            "<" },
+  { "half-up",         OP_HALF_UP,              "[" },
+  { "half-down",       OP_HALF_DOWN,            "]" },
+  { "help",            OP_HELP,                 "?" },
+  { "tag-prefix",      OP_TAG_PREFIX,           ";" },
+  { "tag-prefix-cond", OP_TAG_PREFIX_COND,      NULL },
+  { "end-cond",        OP_END_COND,             NULL },
+  { "shell-escape",    OP_SHELL_ESCAPE,         "!" },
+  { "select-entry",    OP_GENERIC_SELECT_ENTRY, "\n" },
+  { "select-entry",    OP_GENERIC_SELECT_ENTRY, "\r" },
+  { "search",          OP_SEARCH,               "/" },
+  { "search-reverse",  OP_SEARCH_REVERSE,       "\033/" },
+  { "search-opposite", OP_SEARCH_OPPOSITE,      NULL },
+  { "jump",            OP_JUMP,                 NULL },
+  { "current-top",     OP_CURRENT_TOP,          NULL },
+  { "current-middle",  OP_CURRENT_MIDDLE,       NULL },
+  { "current-bottom",  OP_CURRENT_BOTTOM,       NULL },
+  { "what-key",        OP_WHAT_KEY,             NULL },
+  { NULL,              0,                       NULL },
+};
+

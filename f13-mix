@@ -1,0 +1,14 @@
+#ifdef MIXMASTER
+const struct binding_t OpMix[] = { /* map: mixmaster */
+  { "accept",                OP_MIX_USE,                     "\n" },
+  { "accept",                OP_MIX_USE,                     "\r" },
+  { "append",                OP_MIX_APPEND,                  "a" },
+  { "insert",                OP_MIX_INSERT,                  "i" },
+  { "delete",                OP_MIX_DELETE,                  "d" },
+  { "chain-prev",            OP_MIX_CHAIN_PREV,              "<left>" },
+  { "chain-next",            OP_MIX_CHAIN_NEXT,              "<right>" },
+  { NULL,                    0,                              NULL },
+};
+#endif /* MIXMASTER */
+// clang-format on
+

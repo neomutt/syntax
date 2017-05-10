@@ -1,0 +1,10 @@
+/* When using the GPGME based backend we have some useful functions
+   for the SMIME menu.  */
+const struct binding_t OpSmime[] = { /* map: smime */
+#ifdef CRYPT_BACKEND_GPGME
+  { "verify-key",            OP_VERIFY_KEY,                  "c" },
+  { "view-name",             OP_VIEW_ID,                     "%" },
+#endif
+  { NULL,                    0,                              NULL },
+};
+
