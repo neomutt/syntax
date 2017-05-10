@@ -256,11 +256,6 @@ syn match muttrcColorMatchCount	contained "[0-9]\+"
 syn match muttrcColorMatchCountNL contained skipwhite skipnl "\s*\\$" nextgroup=muttrcColorMatchCount,muttrcColorMatchCountNL
 syn region muttrcColorRXPat	contained start=+\s*'+ skip=+\\'+ end=+'\s*+ keepend skipwhite contains=muttrcRXString2 nextgroup=muttrcColorMatchCount,muttrcColorMatchCountNL
 syn region muttrcColorRXPat	contained start=+\s*"+ skip=+\\"+ end=+"\s*+ keepend skipwhite contains=muttrcRXString2 nextgroup=muttrcColorMatchCount,muttrcColorMatchCountNL
-syn keyword muttrcColorField	skipwhite contained
-			\ attachment body bold error hdrdefault header index indicator markers message
-			\ normal prompt quoted search sidebar-divider sidebar-flagged sidebar-highlight
-			\ sidebar-indicator sidebar-new sidebar-spoolfile signature status tilde tree
-			\ underline
 syn match   muttrcColorField	contained "\<quoted\d\=\>"
 if use_mutt_sidebar == 1
     syn keyword muttrcColorField contained sidebar_new
