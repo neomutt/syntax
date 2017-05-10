@@ -1,26 +1,28 @@
-" OpEditor
+" From functions.h
+
+" OpEditor -- map: editor
 backspace backward-char backward-word bol buffy-cycle capitalize-word complete
 complete-query delete-char downcase-word eol forward-char forward-word
 history-down history-up kill-eol kill-eow kill-line kill-word quote-char
 transpose-chars upcase-word
 
-" OpPgp
+" OpPgp -- map: pgp
 verify-key view-name
 
-" OpSmime
+" OpSmime -- map: smime
 verify-key view-name
 
-" OpMix
+" OpMix -- map: mixmaster
 accept accept append chain-next chain-prev delete insert
 
-" OpGeneric
+" OpGeneric -- map: generic
 bottom-page current-bottom current-middle current-top end-cond enter-command
 exit first-entry half-down half-up help jump last-entry middle-page next-entry
 next-line next-page previous-entry previous-line previous-page refresh search
 search-next search-opposite search-reverse select-entry select-entry
 shell-escape tag-entry tag-prefix tag-prefix-cond top-page what-key
 
-" OpMain
+" OpMain -- map: index
 bounce-message break-thread buffy-list catchup change-folder
 change-folder-readonly change-newsgroup change-newsgroup-readonly
 change-vfolder check-traditional-pgp clear-flag collapse-all collapse-thread
@@ -46,7 +48,7 @@ toggle-write undelete-message undelete-pattern undelete-subthread
 undelete-thread untag-pattern vfolder-from-query vfolder-window-backward
 vfolder-window-forward view-attachments
 
-" OpPager
+" OpPager -- map: pager
 bottom bounce-message break-thread buffy-list change-folder
 change-folder-readonly change-newsgroup change-newsgroup-readonly
 change-vfolder check-traditional-pgp clear-flag compose-to-sender copy-message
@@ -70,14 +72,14 @@ sidebar-toggle-virtual sidebar-toggle-visible skip-quoted sort-mailbox
 sort-reverse sync-mailbox tag-message toggle-quoted top undelete-message
 undelete-subthread undelete-thread vfolder-from-query view-attachments what-key
 
-" OpAttach
+" OpAttach -- map: attachment
 bounce-message check-traditional-pgp collapse-parts delete-entry
 display-toggle-weed edit-type extract-keys followup-message forget-passphrase
 forward-message forward-to-group group-reply list-reply pipe-entry print-entry
 reply resend-message save-entry undelete-entry view-attach view-attach
 view-mailcap view-text
 
-" OpCompose
+" OpCompose -- map: compose
 attach-file attach-key attach-message attach-news-message copy-file detach-file
 display-toggle-weed edit-bcc edit-cc edit-description edit-encoding edit-fcc
 edit-file edit-followup-to edit-from edit-headers edit-message edit-mime
@@ -87,18 +89,18 @@ pipe-entry postpone-message print-entry rename-attachment rename-file
 send-message smime-menu toggle-disposition toggle-recode toggle-unlink
 update-encoding view-attach view-attach write-fcc
 
-" OpPost
+" OpPost -- map: postpone
 delete-entry undelete-entry
 
-" OpAlias
+" OpAlias -- map: alias
 delete-entry undelete-entry
 
-" OpBrowser
+" OpBrowser -- map: browser
 buffy-list catchup change-dir check-new create-mailbox delete-mailbox
 display-filename enter-mask goto-folder reload-active rename-mailbox select-new
 sort sort-reverse subscribe subscribe-pattern toggle-mailboxes
 toggle-subscribed uncatchup unsubscribe unsubscribe-pattern view-file
 
-" OpQuery
+" OpQuery -- map: query
 create-alias mail query query-append
 
