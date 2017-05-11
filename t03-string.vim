@@ -1,3 +1,4 @@
+" DT_STR       03
 syntax keyword muttrcVarStr contained skipwhite
 
 assumed_charset attach_charset attach_sep attribution attribution_locale

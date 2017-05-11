@@ -1,3 +1,4 @@
+" DT_BOOL      01
 syntax keyword muttrcVarBool	skipwhite contained
 
 allow_8bit allow_ansi arrow_cursor ascii_chars askbcc askcc ask_follow_up

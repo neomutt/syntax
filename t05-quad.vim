@@ -1,3 +1,4 @@
+" DT_QUAD      05
 syntax keyword muttrcVarQuad skipwhite contained
 
 abort_noattach abort_nosubject abort_unmodified bounce catchup_newsgroup copy

@@ -1,3 +1,4 @@
+" DT_NUM       02
 syntax keyword muttrcVarNum contained skipwhite
 
 connect_timeout history imap_keepalive imap_pipeline_depth mail_check
