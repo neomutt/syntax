@@ -1,6 +1,6 @@
 " From functions.h
 
-" syntax match muttrcFunction	contained "\<end-cond\>"
+" syntax match muttrcFunction	contained "\<view-name\>"
 
 " OpEditor -- map: editor
 backspace backward-char backward-word bol buffy-cycle capitalize-word complete
