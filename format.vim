@@ -14,7 +14,7 @@ muttrcPGPGetKeysFormatStr
 muttrcSmimeFormatStr
 muttrcStrftimeFormatStr
 
-" addrbook.c -- alias_format_str() -- afrnt
+" addrbook.c -- alias_format_str() -- afnrt
 alias_format       AliasFmt,         "%4n %2f %t %-10a   %r"
 
 " recvattach.c -- mutt_attach_fmt() -- CcDdeFfIMmnQsTtuX
